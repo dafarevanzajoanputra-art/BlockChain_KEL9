@@ -397,7 +397,6 @@ Riwayat disusun berdasarkan block dan posisi event transaksi.
 | Ownership History | Event pendaftaran dan jual beli | Pembacaan event |
 
 ## 9. Alur Sistem
-
 ```mermaid
 flowchart TD
     A[Pengguna mendaftarkan tanah] --> B[Status TERDAFTAR]
