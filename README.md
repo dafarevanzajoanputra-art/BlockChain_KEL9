@@ -1,8 +1,6 @@
-# 🏡 Land Registration System — Blockchain
+# 🏡 Land Registration System Blockchain
 
 Aplikasi simulasi registrasi tanah, verifikasi oleh PPAT, pencatatan sertifikat oleh BPN, dan perpindahan kepemilikan tanah berbasis blockchain menggunakan Solidity, Hardhat, Streamlit, dan MetaMask.
-
-Repository: [BlockChain_KEL9](https://github.com/dafarevanzajoanputra-art/BlockChain_KEL9)
 
 ---
 
@@ -69,7 +67,6 @@ Pastikan perangkat telah memiliki:
 - Node.js dan npm.
 - Python.
 - MetaMask pada browser.
-- Git (opsional, untuk clone repository).
 
 ### 4.1 Clone repository
 
@@ -110,7 +107,7 @@ pip install streamlit web3
 
 ## 5. Menjalankan Aplikasi
 
-### Langkah 1 — Jalankan blockchain lokal
+### Langkah 1 - Jalankan blockchain lokal
 
 Buka terminal pertama di folder project dan jalankan:
 
@@ -128,7 +125,7 @@ Hardhat menyediakan akun pengujian beserta saldo ETH lokal untuk transaksi simul
 
 Terminal ini harus tetap berjalan selama aplikasi digunakan.
 
-### Langkah 2 — Kompilasi smart contract
+### Langkah 2 - Kompilasi smart contract
 
 Buka terminal kedua di folder project.
 
@@ -140,7 +137,7 @@ Perintah ini mengompilasi smart contract Solidity dan menghasilkan ABI serta byt
 
 ABI digunakan oleh aplikasi untuk berkomunikasi dengan fungsi smart contract.
 
-### Langkah 3 — Konfigurasi wallet aktor
+### Langkah 3 - Konfigurasi wallet aktor
 
 Periksa file `actors.json`.
 
@@ -155,7 +152,7 @@ Ganti alamat wallet sesuai aktor yang digunakan dalam simulasi.
 
 Alamat wallet PPAT dan BPN harus berbeda dan valid.
 
-### Langkah 4 — Deploy smart contract
+### Langkah 4 - Deploy smart contract
 
 Pastikan blockchain Hardhat Local pada terminal pertama masih berjalan.
 
@@ -177,7 +174,7 @@ Script deployment melakukan proses berikut:
 
 Setelah deployment berhasil, file `deployment.json` akan diperbarui secara otomatis.
 
-### Langkah 5 — Jalankan dashboard
+### Langkah 5 - Jalankan dashboard
 
 Pastikan virtual environment Python aktif.
 
@@ -193,7 +190,7 @@ http://localhost:8501
 
 Dashboard digunakan untuk memantau koneksi blockchain lokal, Chain ID, block terbaru, RPC URL, serta alamat smart contract.
 
-### Langkah 6 — Buka frontend DApp
+### Langkah 6 - Buka frontend DApp
 
 Pada dashboard Streamlit, klik tombol:
 
@@ -350,6 +347,7 @@ Fungsi:
 - Menampilkan status tanah.
 - Menampilkan informasi pemilik.
 - Menampilkan informasi sertifikat dan Token ID jika sudah tercatat.
+- Menampilkan dokumen pendukung yang dilampirkan.
 
 Hubungan dengan smart contract:
 
@@ -428,8 +426,6 @@ flowchart TD
 | BPN | Mencatat sertifikat dan mencetak NFT. |
 | Pemilik tanah | Mendaftarkan tanah dan melakukan jual beli atas tanah yang dimiliki sesuai aturan kontrak. |
 
-Admin dapat menetapkan role PPAT dan BPN melalui fungsi `setPPAT()` dan `setBPN()`.
-
 ## 12. Catatan Penggunaan
 
 - Aplikasi ini merupakan simulasi menggunakan blockchain lokal Hardhat.
@@ -437,13 +433,3 @@ Admin dapat menetapkan role PPAT dan BPN melalui fungsi `setPPAT()` dan `setBPN(
 - Jika node Hardhat dijalankan ulang dari awal, deployment smart contract sebelumnya dapat tidak lagi tersedia. Lakukan deployment ulang dan perbarui `deployment.json`.
 - Pastikan jaringan MetaMask menggunakan Chain ID `31337`.
 - Pastikan alamat kontrak pada `deployment.json` sesuai dengan kontrak yang sedang berjalan.
-- Dokumen pendukung pendaftaran tidak diunggah ke aplikasi.
-- Jangan gunakan private key akun Hardhat pada jaringan publik atau untuk menyimpan aset sungguhan.
-
----
-
-## 13. Pengembang
-
-Project Blockchain Kelompok 9.
-
-Repository: [GitHub - BlockChain_KEL9](https://github.com/dafarevanzajoanputra-art/BlockChain_KEL9)
