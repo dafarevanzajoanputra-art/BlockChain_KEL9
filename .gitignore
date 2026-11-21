@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Hardhat generated files
+cache/
+artifacts/
+
+# Coverage
+coverage/
+coverage.json/
+
+# TypeChain
+typechain/
+typechain-types/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
